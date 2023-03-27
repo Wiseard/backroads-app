@@ -392,6 +392,12 @@ You can delete the folder locally and restore it by connecting to your GitHub ac
 - copy the git URL
 - type : "git clone URL" on your terminal to restore it
 
+In order to run it locally :
+
+- `npm install`
+- `npm start`
+- Combine both : `npm install && npm start`
+
 #### Warnings "Gotcha"
 
 - Netlify treats warnings as errors
