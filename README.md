@@ -147,7 +147,7 @@ export default App
 import logo from '../images/logo.svg'
 
 // JSX
-;<img src={logo} className='nav-logo' alt='backroads' />
+;<img src={logo} className="nav-logo" alt="backroads" />
 ```
 
 #### Smooth Scroll
@@ -177,7 +177,7 @@ html {
 
 ```js
 <li>
-  <a href='#home' className='nav-link'>
+  <a href="#home" className="nav-link">
     home
   </a>
 </li>
@@ -204,7 +204,7 @@ import { pageLinks } from '../data'
   pageLinks.map((link) => {
     return (
       <li key={link.id}>
-        <a href={link.href} className='nav-link'>
+        <a href={link.href} className="nav-link">
           {link.text}
         </a>
       </li>
@@ -224,7 +224,7 @@ import { pageLinks } from '../data'
     const { id, href, icon } = link
     return (
       <li key={id}>
-        <a href={href} target='_blank' rel='noreferrer' className='nav-icon'>
+        <a href={href} target="_blank" rel="noreferrer" className="nav-icon">
           <i className={icon}></i>
         </a>
       </li>
@@ -252,7 +252,7 @@ import { pageLinks } from '../data'
 ```js
 const Title = ({ title, subTitle }) => {
   return (
-    <div className='section-title'>
+    <div className="section-title">
       <h2>
         {title} <span>{subTitle}</span>
       </h2>
@@ -269,7 +269,7 @@ About.js
 import Title from './Title'
 
 // display
-;<Title title='about' subTitle='us' />
+;<Title title="about" subTitle="us" />
 ```
 
 #### Services
@@ -298,20 +298,20 @@ import Title from './Title'
 import { services } from '../data'
 const Services = () => {
   return (
-    <section className='section services' id='services'>
-      <Title title='our' subTitle='services' />
+    <section className="section services" id="services">
+      <Title title="our" subTitle="services" />
 
-      <div className='section-center services-center'>
+      <div className="section-center services-center">
         {services.map((service) => {
           const { id, icon, title, text } = service
           return (
-            <article className='service' key={id}>
-              <span className='service-icon'>
+            <article className="service" key={id}>
+              <span className="service-icon">
                 <i className={icon}></i>
               </span>
-              <div className='service-info'>
-                <h4 className='service-title'>{title}</h4>
-                <p className='service-text'>{text}</p>
+              <div className="service-info">
+                <h4 className="service-title">{title}</h4>
+                <p className="service-text">{text}</p>
               </div>
             </article>
           )
@@ -386,6 +386,11 @@ export default Services
 
 - don't need to keep project locally
 - automatic builds
+
+You can delete the folder locally and restore it by connecting to your GitHub account :
+
+- copy the git URL
+- type : "git clone URL" on your terminal to restore it
 
 #### Warnings "Gotcha"
 
